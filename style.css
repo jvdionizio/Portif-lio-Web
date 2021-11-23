@@ -19,7 +19,7 @@ body {
     width: max-content;
     padding: 5px;
     border-radius: 10px;
-    margin: auto;
+    margin: 10px auto;
 }
 .pictures{
     width: 300px;
@@ -31,7 +31,7 @@ body {
 }
 .text{
     color: white;
-    margin: auto;
+    margin: 10px auto;
     background: linear-gradient(to bottom right, #009933 0%, #6600cc 100%);
     padding: 20px;
     width: 800px;
@@ -48,11 +48,13 @@ body {
 
 }
 .list-style {
+    display: inline-block;
     background-color: rgb(54, 58, 58);
     width: 150px;
     margin: 10px 29%;
     color: rgb(255, 0, 0);
     border-radius: 5px;
+    text-align: center;
 }
 .button-linkedin{
     text-decoration: none;
