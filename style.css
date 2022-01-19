@@ -1,92 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    color: white;
-    background-image: url(materials/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-    background-attachment: scroll; 
-    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
-     
-}
-.title {
-    color: white;
-    background: linear-gradient(to bottom right, #0000cc 0%, #058d17 100%);
-    width: max-content;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 10px auto;
-}
-.pictures{
-    width: 300px;
-    height: 400px;    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40%;
-}
-.text{
-    color: white;
-    margin: 10px auto;
-    background: linear-gradient(to bottom right, #009933 0%, #6600cc 100%);
-    padding: 20px;
-    width: 800px;
-    text-align: center;
-    border-radius: 40px;
-}
-.caption{
-    margin: 10px 29%;
-    background: linear-gradient(to bottom left, #00cc99 13%, #6600cc 86%);
-    padding: 5px;
-    width: max-content;
-    text-align: center;
-    border-radius: 10px;
 
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    color: black;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
 }
-.list-style {
-    display: inline-block;
-    background-color: rgb(54, 58, 58);
-    width: 150px;
-    margin: 10px 29%;
-    color: rgb(255, 0, 0);
+
+header {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+header div{
+    margin-left: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header div p{
+    margin-left: 10px;
+}
+
+li{
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    font-weight: 700;
+}
+
+.main-info{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-about{
+    margin: 20px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pictures{
+    height: 820px;
+}
+
+.text{
+    font-size: 1.25rem;
+    font-weight: 100;
+    width: fit-content;
+    flex-basis: 50%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+hr{
+    line-height: 5px;
+    width: 95%;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.caption{
+    margin-top: 32px;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+#benefits{
+    font-size: 2rem;
+}
+
+#main-about{
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
-    text-align: center;
+    font-size: 1.25rem;
 }
+
+#soft-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#soft-skills li{
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10px 0px;
+}
+
+#soft-skills li p{
+    font-family: 'Luxurious Roman', cursive;
+}
+
+#soft-skills li hr{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
 .button-linkedin{
     text-decoration: none;
     line-height: 20px;
-    background: linear-gradient(to bottom right, #000099 32%, #3366ff 94%);
     margin: 30px auto;
     padding: 5px;
     border-radius: 4px;
     display: block;
     width: 125px;
     text-align: center;
-    color: rgb(255, 255, 255);
     font-weight: 700;
 }
-.button-linkedin:hover{
-    background: linear-gradient(to bottom right, #000099 56%, #3366ff 110%);
-    transition: 1s;
-}
+
 .button-github{
     text-decoration: none;
     line-height: 20px;
-    background: linear-gradient(to bottom right, #666699 32%, #999966 94%);
     margin: 30px auto;
     padding: 5px;
     border-radius: 4px;
     display: block;
     width: 125px;
     text-align: center;
-    color: rgb(255, 255, 255);
     font-weight: 700;
     transition: 2s;
-}
-.button-github:hover{
-    background: linear-gradient(to bottom right, #666699 56%, #999966 110%);
 }
