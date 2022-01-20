@@ -72,6 +72,7 @@ ul {
 
 
 .main-info{
+    margin:auto;
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -80,6 +81,7 @@ ul {
 }
 
 .name-about{
+    flex-basis: 40%;
     margin: 20px;
     align-self: flex-end;
     display: flex;
@@ -88,8 +90,12 @@ ul {
     justify-content: center;
 }
 
-.pictures{
-    height: 820px;
+.picture{
+    flex-basis: 45%;
+}
+
+.picture img{
+    width: 100%;
 }
 
 .text{
