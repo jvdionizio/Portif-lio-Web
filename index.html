@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -17,9 +18,9 @@
             </div>
             <nav>
                 <ul>
-                  <li>Habilidades</li>
-                  <li>Projetos</li>
-                  <li>Contatos</li>
+                  <li><a>Habilidades</a></li>
+                  <li><a>Projetos</a></li>
+                  <li><a>Contatos</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,9 +34,9 @@
         </div>
         <hr>
         <div class="container">
-            <p class="caption">Habilidades<p id="banefits">& Benefícios organizacionais</p></p>
+            <p class="caption">Habilidades<p class="banefits">& Benefícios organizacionais</p></p>
             <ul class="list">
-                <div id="soft-skills">
+                <div class="soft-skills">
                     <li>
                         <p>Explicar conceitos difíceis para o grupo e levar idéias para várias pessoas de maneira clara</p>
                         <hr>
@@ -64,10 +65,58 @@
                 </div>
             </ul>
         </div>
-        <p><a class="button-linkedin" href="https://www.linkedin.com/in/jo%C3%A3o-victor-dionizio-780b42225/" target="_blank"> Linkedin </a>
-        </p>
-        <p><a class="button-github" href="https://github.com/jvdionizio" target="_blank"> GitHub </a>
-        </p>
-        <script type="text/javascript" src="script.js"></script>
+        <div class="container">
+            <p class="caption">Projetos<p class="banefits">& Habilidades Utilizadas</p></p>
+            <ul class="list">
+                <div class="soft-skills">
+                    <li class="projects">
+                        <img src="img/Trybewarts.png" alt="Foto de uma parte de um projeto, na foto é possivel ver um formúlário" >
+                        <p>Criar formulários em HTML;<br>
+                        Utilizar CSS Flexbox para criar layouts flexíveis;<br>
+                        Criar regras CSS específicas para serem aplicadas a dispositivos móveis;<br>
+                        Construir páginas que alteram o seu layout de acordo com a orientação da tela;</p>
+                        <hr>
+                        <strong>Trybewarts</strong>
+                    </li>
+                    <li class="projects">
+                        <img src="img/Unit tests.png" alt="Foto de uma parte de um projeto, na foto é possivel ver o código de um teste em javascript" >
+                        <p>Escrever testes unitários para funções utilizando o  módulo Jest do NodeJS para verificar o correto funcionamento dessas funções;<br>
+                        A partir de testes já implementados, escrever funções de forma que elas atendam aos testes propostos;<br>
+                        Escrever testes e funções utilizando uma abordagem de desenvolvimento orientado a testes.;</p>
+                        <hr>
+                        <strong>Js Unit Tests</strong>
+                    </li>
+                    <li class="projects">
+                        <img src="img/To Do List.png" alt="Foto de um projeto, na foto é possivel ver uma lista de tarefas" >
+                        <p> 
+                            Manipular CSS;<br>
+                            Manipular Javascript;
+                        </p>
+                        <hr>
+                        <strong>To Do List</strong>
+                    </li>
+                    <li class="projects">
+                        <img src="img/Pixel Art.png" alt="Foto de um projeto, na foto é possivel ver uma paletade cores selecionaveis e um quadro de pixels já pintados desenhando uma flor" >
+                        <p>
+                            Manipular o DOM;<br>
+                            Manipular o Javascript;
+                        </p>
+                        <hr>
+                        <strong>Pixels Art</strong>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div id="contact">
+            <p>Precisa de um programador?</p>
+            <a href="mailto:dionizio145@gmail.com" target="_blank">Vamos Trabalhar Juntos!</a>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-dionizio-780b42225/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jvdionizio" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://instagram.com/jvdionizio" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </footer>
     </body>
 </html>

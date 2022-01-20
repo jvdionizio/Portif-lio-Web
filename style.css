@@ -16,6 +16,16 @@ body {
     font-family: 'Fira Code', Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    padding: 0 10px;
+    opacity: 0.8;
+  }
+  
+a:hover {
+    opacity: 1;
+}
+
 header {
     background-color: white;
     position: fixed;
@@ -42,6 +52,14 @@ header div p{
     margin-left: 10px;
 }
 
+header a{
+    font-weight: 600;
+}
+
+p a{
+    font-weight: 600;
+}
+
 li{
     margin-right: 10px;
 }
@@ -51,9 +69,6 @@ ul {
     display: flex;
 }
 
-a {
-    font-weight: 700;
-}
 
 .main-info{
     width: 95%;
@@ -88,6 +103,9 @@ a {
     flex-direction: column;
     width: 80%;
     margin: auto;
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 64px;
 }
 
 hr{
@@ -105,7 +123,7 @@ hr{
     font-weight: 700;
 }
 
-#benefits{
+.benefits{
     font-size: 2rem;
 }
 
@@ -123,15 +141,17 @@ hr{
     font-size: 1.25rem;
 }
 
-#soft-skills {
+.soft-skills {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 80%;
+    align-self: center;
 }
 
-#soft-skills li{
-    flex-basis: 47%;
+.soft-skills li{
+    flex-basis: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,36 +161,53 @@ hr{
     border-radius: 10px 0px;
 }
 
-#soft-skills li p{
+.soft-skills li p{
     font-family: 'Luxurious Roman', cursive;
 }
 
-#soft-skills li hr{
+.soft-skills li hr{
     margin: 0;
     margin-bottom: 8px;
 }
 
-.button-linkedin{
-    text-decoration: none;
-    line-height: 20px;
-    margin: 30px auto;
-    padding: 5px;
-    border-radius: 4px;
-    display: block;
-    width: 125px;
-    text-align: center;
+.soft-skills li img{
+    align-self: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#contact a{
+    font-size: 3rem;
+    color: black;
     font-weight: 700;
 }
 
-.button-github{
-    text-decoration: none;
-    line-height: 20px;
-    margin: 30px auto;
-    padding: 5px;
-    border-radius: 4px;
-    display: block;
-    width: 125px;
-    text-align: center;
-    font-weight: 700;
-    transition: 2s;
-}
+footer {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+  }
+  
+  footer ul {
+    display: flex;
+    margin: auto;
+  }
+  
+  footer li a {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  footer ul li {
+    display: flex;
+  }
