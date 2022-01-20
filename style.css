@@ -19,7 +19,7 @@ body {
 a {
     text-decoration: none;
     padding: 0 10px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
   
 a:hover {
@@ -54,6 +54,7 @@ header div p{
 
 header a{
     font-weight: 600;
+    color: black;
 }
 
 p a{
