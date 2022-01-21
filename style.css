@@ -282,6 +282,7 @@ footer {
 @media screen and (max-width: 600px) {
     header {
         justify-content: space-between;
+        position: absolute;
     }
 
     header div {
